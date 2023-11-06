@@ -11,7 +11,7 @@ conexion = pymysql.connect(
     db="plinko"
 )
 
-folder_path = "D:\Documentos\Programas\Godot\Godot\plinko\WorldGame01"
+folder_path = "path"
 datasave = {}
 
 cursor = conexion.cursor()
