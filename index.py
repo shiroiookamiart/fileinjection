@@ -22,11 +22,11 @@ for filename in os.listdir(folder_path):
     if filename.endswith(".json"):
         with open(os.path.join(folder_path, filename), "r") as f:
             data = json.load(f)
-            datasave["angulo_salida"] = data["angulo_salida"]
-            datasave["angulo_ruido"] = data["angulo_salida_con_ruido"]
-            datasave["coordenadas"] = data["coordenadas"]
-            query = "INSERT INTO datos (angulo, angulo_ruido, coordenadas) VALUES (%s, %s, %s)"
-            values = (datasave["angulo_salida"] , datasave["angulo_ruido"] , str(datasave["coordenadas"]))
+            datasave["column_1"] = data["column_1"]
+            datasave["column_2"] = data["column_2"]
+            datasave["column_3"] = data["column_3"]
+            query = "INSERT INTO data (column_1, column_2, column_3) VALUES (%s, %s, %s)"
+            values = (datasave["column_1"] , datasave["column_2"] , str(datasave["column_3"]))
             cursor.execute(query, values)
             conexion.commit()
 
