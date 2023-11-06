@@ -1,3 +1,3 @@
 # fileinjection
 
-como leer archivos en una carpeta con python
+como leer archivos json en una carpeta con python y guardarlos en base de datos
