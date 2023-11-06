@@ -1,4 +1,5 @@
 #bin/python
+#codigo por david beltran shiro 
 
 import json
 import os
@@ -8,7 +9,7 @@ conexion = pymysql.connect(
     host="127.0.0.1",
     user="root",
     password="",
-    db="plinko"
+    db="namedb"
 )
 
 folder_path = "path"
